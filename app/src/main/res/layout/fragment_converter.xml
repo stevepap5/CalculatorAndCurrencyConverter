@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConverterFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TableLayout android:layout_height="0sp"
+            android:layout_width="match_parent"
+            android:id="@+id/currencyTabLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:weightSum="2"
+            style="@style/Widget.AppCompat.ButtonBar"
+            >
+
+            <TableRow
+                android:layout_weight="1"
+              >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_column="1"
+                    android:id="@+id/buttonChangeCurrencyTopXml"
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:textSize="25sp"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20sp"
+                    android:id="@+id/textLayoutInputAmountXml"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    style="@style/MaterialAlertDialog.MaterialComponents.Title.Text"
+                    android:layout_column="2">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editTextInputAmountXml"
+                        android:inputType="numberDecimal"
+                        android:textSize="25sp"
+                      />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+            >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_column="1"
+                    android:id="@+id/buttonChangeCurrencyBottomXml"
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:textSize="25sp"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20sp"
+                    android:id="@+id/textLayoutShowEquivalentXml"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textLayoutInputAmountXml"
+                    style="@style/MaterialAlertDialog.MaterialComponents.Title.Text"
+                    android:layout_column="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewShowEquivalentXml"
+                        android:textSize="25sp"
+                      />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+        </TableLayout>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:weightSum="4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/currencyTabLayout"
+            style="@style/Widget.AppCompat.ButtonBar"
+            android:stretchColumns="1,4"
+            >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_column="1"
+                    android:text="@string/_1"
+                    android:id="@+id/buttonOneXml"
+                    android:textSize="30sp"
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_column="2"
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:id="@+id/buttonTwoXml"
+                    android:textSize="30sp"
+                    android:text="@string/_2" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_column="3"
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:textSize="30sp"
+                    android:id="@+id/buttonThreeXml"
+                    android:text="@string/_3" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_column="4"
+                    android:id="@+id/buttonReverseXml"
+                    android:text="@string/reverse"
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:textSize="30sp"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_column="1"
+                    android:text="@string/_4"
+                    android:id="@+id/buttonFourXml"
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:textSize="30sp"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_column="2"
+                    android:text="@string/_5"
+                    android:id="@+id/buttonFiveXml"
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:textSize="30sp"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_column="3"
+                    android:text="@string/_6"
+                    android:id="@+id/buttonSixXml"
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:textSize="30sp"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_column="4"
+                    android:text=""
+                    android:id="@+id/buttonHistoryXml"
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:textSize="30sp"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_column="1"
+                    android:text="@string/_7"
+                    android:id="@+id/buttonSevenXml"
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:textSize="30sp"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_column="2"
+                    android:text="@string/_8"
+                    android:id="@+id/buttonEightXml"
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:textSize="30sp"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_column="3"
+                    android:text="@string/_9"
+                    android:id="@+id/buttonNineXml"
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:textSize="30sp"
+                    />
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_column="1"
+                    android:text="@string/dot"
+                    android:id="@+id/buttonDotXml"
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:textSize="30sp"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_column="2"
+                    android:text="@string/_0"
+                    android:id="@+id/buttonZeroXml"
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:textSize="30sp"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_column="3"
+                    android:text="@string/del"
+                    android:id="@+id/buttonDeleteXml"
+                    style="@style/Widget.AppCompat.ButtonBar"
+                    android:textSize="30sp"
+                    />
+
+
+            </TableRow>
+        </TableLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
