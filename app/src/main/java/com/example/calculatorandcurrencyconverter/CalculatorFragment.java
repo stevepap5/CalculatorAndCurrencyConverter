@@ -185,7 +185,8 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
                         editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='*'&&
                         editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='-'&&
                         editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='/'&&
-                        editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='+'
+                        editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='+'&&
+                        editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='.'
                 ) {
                     editTextInputAmount.setText(editTextInputAmount.getText().toString()+"/");
                 }
@@ -198,7 +199,8 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
                         editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='*'&&
                         editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='-'&&
                         editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='/'&&
-                        editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='+')
+                        editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='+'&&
+                        editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='.')
                 {
                     editTextInputAmount.setText(editTextInputAmount.getText().toString()+"+");
                 }
@@ -211,7 +213,8 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
                         editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='*'&&
                         editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='-'&&
                         editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='/'&&
-                        editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='+')
+                        editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='+'&&
+                        editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='.')
                 {
                     editTextInputAmount.setText(editTextInputAmount.getText().toString()+"-");
                 }
@@ -224,7 +227,8 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
                         editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='*'&&
                         editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='-'&&
                         editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='/'&&
-                        editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='+')
+                        editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='+'&&
+                editTextInputAmount.getText().toString().charAt(editTextInputAmount.getText().length()-1)!='.')
                 {
                     editTextInputAmount.setText(editTextInputAmount.getText().toString()+"*");
                 }
